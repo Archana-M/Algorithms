@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Fibonacci</title>
+	<script type="text/javascript">
+
+// here we have a function called 'fib'
+		function fib() {
+      // There is an inner function that increments count and then console logs it.
+  			var prev1 = 0;
+  			var prev2 = 1;
+      		function nacci() {
+            // increments the count
+        	newnum = prev1+prev2;
+        		prev1 = prev2;
+        		prev2 = newnum;
+        		
+        		console.log(newnum);
+            // console logs it
+        	
+      		}
+  		return nacci;
+      // return the inner function! 
+		}
+
+  // counter is now the function returned form invoking Fib.
+var nextnum = fib();
+nextnum() 
+nextnum()
+nextnum() 
+nextnum()
+nextnum()
+nextnum()
+// this shows that counting is occuring and and it is being changed even though we arent inside of the 'fib' function!
+	</script>
+
+
+</head>
+<body>
+
+</body>
+</html>
