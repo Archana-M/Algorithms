@@ -5,3 +5,8 @@ for(var i=0;i<array.length/2;i++){
 	array[i] = temp; 
 }
 console.log(array);
+
+// using .reverse() method
+// var array= [2,4,1,3,"string",10,8];
+// var newArray = array.reverse();
+// console.log(newArray);
