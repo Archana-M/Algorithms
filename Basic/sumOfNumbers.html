@@ -1,0 +1,28 @@
+<!-- Write a program that asks the user for a number n and prints the sum of the numbers 1 to n
+QUESTION SOURCE: https://adriann.github.io/programming_problems.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sum of numbers 1 to n</title>
+</head>
+<body>
+  <label for="number">Type a number
+  <input type="number" id ="number" value="7"></label>
+  <button onClick="myfunction()">Submit</button>
+  <p id="demo"></p>
+  <script>
+    function myfunction(){
+      
+      var x = document.getElementById("number").value;
+      var total = 0;
+      for(var i=0; i<=x; i++){
+        total +=i;
+      }
+      document.getElementById("demo").innerHTML =   total;
+    }
+   
+  </script>
+</body>
+</html>
